@@ -10,6 +10,7 @@ echo "<  <  <  PostgreSQL installed successfully   >  >  >"
 echo "Installing JDK"
 sudo apt-get update
 sudo apt-get install openjdk-8-jdk
+# sudo apt install openjdk-8-jre-headless: this one worked on terminal
 java -version
 echo "<  <  <  JDK-8 installed successfully   >  >  >"
  
