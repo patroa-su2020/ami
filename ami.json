@@ -2,8 +2,8 @@
   "variables": {
     "aws_access_key": "",
     "aws_secret_key": "",
-    "aws_region": "us-east-1",
-    "subnet_id": "subnet-03069783896f96e31",
+    "aws_region": "",
+    "subnet_id": "subnet-04a7d219141734b56",
     "source_ami": "ami-068663a3c619dd892",
     "ssh_username": "ubuntu"
   },
@@ -15,7 +15,7 @@
       "region": "{{user `aws_region`}}",
       "instance_type": "t2.micro",
       "subnet_id": "{{user `subnet_id`}}",
-      "ami_name": "Demo AMI ",
+      "ami_name": "csye_6225_a4_{{timestamp}} ",
       "ssh_username": "{{user `ssh_username`}}",
       "source_ami": "{{user `source_ami`}}",
       "ami_description": "Ubuntu AMI for CSYE 6225 - Summer 2020",
