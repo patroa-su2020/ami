@@ -3,10 +3,13 @@
     "aws_access_key": "",
     "aws_secret_key": "",
     "aws_region": "",
-    "subnet_id": "subnet-0f1291de285781972",
+    "subnet_id": "subnet-0d20bc79b499983fb",
     "source_ami": "ami-068663a3c619dd892",
     "ssh_username": "ubuntu",
-    "ami_users": "684177922449,787647769598"
+    "ami_users": "684177922449,787647769598",
+    "ami_name": "csye_6225_a4_",
+    "ami_description": "Ubuntu AMI for CSYE 6225 - Summer 2020",
+    "instance_type": "t2.micro"
   },
   "builders": [
     {
@@ -15,12 +18,12 @@
       "access_key": "{{user `aws_access_key`}}",
       "secret_key": "{{user `aws_secret_key`}}",
       "region": "{{user `aws_region`}}",
-      "instance_type": "t2.micro",
+      "instance_type": "{{user `instance_type`}}",
       "subnet_id": "{{user `subnet_id`}}",
       "ami_name": "csye_6225_a4_{{timestamp}} ",
       "ssh_username": "{{user `ssh_username`}}",
       "source_ami": "{{user `source_ami`}}",
-      "ami_description": "Ubuntu AMI for CSYE 6225 - Summer 2020",
+      "ami_description": "{{user `ami_description`}}",
       "launch_block_device_mappings": [
         {
           "device_name": "/dev/sda1",
