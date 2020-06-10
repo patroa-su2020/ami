@@ -7,10 +7,9 @@ sudo apt update
 sudo apt install postgresql postgresql-contrib
 echo "<  <  <  PostgreSQL installed successfully   >  >  >"
 
-echo "Installing JDK"
+echo "Installing JDK-8"
 sudo apt-get update
-sudo apt-get install openjdk-8-jdk
-# sudo apt install openjdk-8-jre-headless: this one worked on terminal
+sudo apt install openjdk-8-jre-headless 
 java -version
 echo "<  <  <  JDK-8 installed successfully   >  >  >"
  
