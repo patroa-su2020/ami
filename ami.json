@@ -3,7 +3,7 @@
     "aws_access_key": "",
     "aws_secret_key": "",
     "aws_region": "",
-    "subnet_id": "subnet-0d20bc79b499983fb",
+    "subnet_id": "subnet-029c03b5e41ce23b5",
     "source_ami": "ami-068663a3c619dd892",
     "ssh_username": "ubuntu",
     "ami_users": "684177922449,787647769598",
